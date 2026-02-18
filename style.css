@@ -734,39 +734,41 @@ footer p {
    ===================== */
 
 .contact-box {
-    margin-top: 120px !important; /* Nilayo sa Nav bar */
-    padding: 80px 40px !important;
-    max-width: 800px;
+    margin-top: 350px !important; 
+    padding: 120px 60px 80px !important; /* Dinagdagan ang top padding para sa header */
+    max-width: 900px; /* Pinalapad konti */
     margin-left: auto;
     margin-right: auto;
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px; /* Automatic spacing sa pagitan ng items */
+    gap: 60px; /* Mas malaking gap sa pagitan ng sections */
 }
 
 .contact-info-wrapper {
     display: flex;
-    gap: 50px;
+    gap: 40px; /* Nilayo ang Phone sa Email card */
     width: 100%;
     justify-content: center;
-    margin: 20px 0;
+    margin: 40px 0;
+    flex-wrap: wrap; /* Para hindi mag-overlap sa maliit na screen */
 }
 
-/* Fix para sa Email text na nag-ooverflow */
-.contact-box .info-value {
-    word-break: break-word;
-    font-size: 14px;
-    max-width: 200px;
+/* Para hindi dikit-dikit ang text sa loob ng boxes */
+.contact-box .info-box {
+    padding: 30px 25px;
+    min-width: 280px; /* Pinalapad ang cards */
 }
 
 .contact-socials {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 30px; /* Spacing sa label at icons */
+    margin-top: 20px;
 }
+
+
 
 /* =====================
    RESPONSIVE DESIGN (Media Queries)
