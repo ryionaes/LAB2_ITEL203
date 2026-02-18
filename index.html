@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | John Harold Beladas</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/yumi.png">
+
+    <style>
+        
+        body {
+            font-family: 'Poppins', Arial, sans-serif; 
+            margin: 0;
+            text-align: center;
+        }
+        h1 {
+            color: #4a5438; 
+            margin-top: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #4a5438;
+        }
+
+        /* Gallery Styling */
+        .gallery {
+            margin: 40px auto;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 280px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px; 
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease;
+            box-shadow: 10px 10px 0px #89986d;
+
+            
+            
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        /* IMAGE HOVER WITH SLIGHT ZOOM */
+        .gallery img:hover {
+            transform: scale(1.08); 
+            cursor: pointer;
+           box-shadow: 10px 10px 0px #6c7e4c;
+            transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        footer {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.3); 
+            backdrop-filter: blur(5px);
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+
+        <hr style="width: 50px; border: 2px solid #89986d; margin: 20px auto;">
+
+        <h1>Welcome to My Styled Webpage</h1>
+        <p>This webpage demonstrates the use of internal and external CSS.</p>
+        <p>We will apply styling to navigation, text, images, and footer.</p>
+
+        <div class="gallery">
+            <img src="images/green1.png" alt="Green Image 1">
+            <img src="images/green2.jpg" alt="Green Image 2">
+            <img src="images/green3.jpg" alt="Green Image 3">
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2026 CSS Basics Lab | John Harold Beladas</p>
+</footer>
+
+</body>
+</html>
